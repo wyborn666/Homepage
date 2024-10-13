@@ -111,7 +111,7 @@ function init() {
                 initialLeft: star.getBoundingClientRect().left, // Запоминаем начальное положение
                 top: star.getBoundingClientRect().top, // Текущее положение
                 left: star.getBoundingClientRect().left, // Текущее положение
-                speed: Math.random() * 0.25 + 0.25 // Генерируем случайную скорость для каждой звезды
+                speed: Math.random() * 0.35 + 0.45 // Генерируем случайную скорость для каждой звезды
             });
         });
 
