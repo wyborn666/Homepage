@@ -6,7 +6,7 @@ function init() {
 
     const audio = new Audio("static/images/Scala_Kolacny_Brothers_-_Smells_Like_Teen_Spirit_68331663 (mp3cut.net).mp3");
 
-    audio.addEventListener('ended', function () {
+    audio.addEventListener('ended', function() {
         resetAnimation(); // Вызываем функцию сброса анимации после окончания аудио
     });
 
@@ -67,7 +67,7 @@ function init() {
         const meteorContainer = document.getElementsByClassName('meteorites')[0];
         meteorContainer.innerHTML = meteor;
 
-        setTimeout(function () {
+        setTimeout(function() {
             meteorContainer.innerHTML = "";
         }, 1000);
     }
@@ -76,7 +76,7 @@ function init() {
     let fallingStars = [];
     let isFalling = false;
 
-    document.addEventListener("keydown", function (event) {
+    document.addEventListener("keydown", function(event) {
         pressedKeys.push(event.key);
 
         // Комбинация клавиш для начала падения звёзд
@@ -111,7 +111,7 @@ function init() {
                 initialLeft: star.getBoundingClientRect().left, // Запоминаем начальное положение
                 top: star.getBoundingClientRect().top, // Текущее положение
                 left: star.getBoundingClientRect().left, // Текущее положение
-                speed: Math.random() * 0.25 + 0.25 // Генерируем случайную скорость для каждой звезды
+                speed: Math.random() * 0.35 + 0.45 // Генерируем случайную скорость для каждой звезды
             });
         });
 
@@ -166,8 +166,6 @@ function init() {
     setTimeout(spawnMeteor, meteorDelay);
     generationStars();
     spawnMeteor();
-
-
 }
 
 window.onload = init;
