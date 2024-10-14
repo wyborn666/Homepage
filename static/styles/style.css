@@ -94,7 +94,6 @@ html, body {
     animation: rotate 3000s infinite linear;
 }
 
-
 .star {
     background-color: lightblue;
     border-radius: 50%;
@@ -115,7 +114,6 @@ html, body {
 .star.opacity2 { opacity: .5; }
 .star.opacity3 { opacity: .1; }
 
-
 .font-image {
     position: fixed;
     top: 0;
@@ -131,7 +129,6 @@ html, body {
     opacity: 1;
 }
 
-
 @font-face {
     font-family: 'CustomFont';
     src: url('../images/chunk-five-print.ttf');
@@ -146,6 +143,9 @@ html, body {
     left: 50%;
     transform: translate(-50%, -50%);
     pointer-events: none;
+    user-select: none;
+    cursor: default;
+    white-space: nowrap;
 
 }
 
@@ -153,6 +153,8 @@ html, body {
     border-radius: 50%;
     object-fit: contain;
     z-index: 3;
+    user-select: none;
+    cursor: default;
 }
 .icons-container {
     display: flex;
@@ -162,6 +164,7 @@ html, body {
     justify-content: space-between;
     filter: invert(100%);
     z-index: 3;
+
 
 }
 
