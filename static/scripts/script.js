@@ -109,7 +109,7 @@ function init() {
                 initialLeft: star.getBoundingClientRect().left,
                 top: star.getBoundingClientRect().top,
                 left: star.getBoundingClientRect().left,
-                speed: Math.random() * 0.25 + 0.24
+                speed: Math.random() * 0.55 + 0.45
             });
         });
 
